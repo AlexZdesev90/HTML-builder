@@ -12,7 +12,7 @@ fs.promises.readdir(folderPath,
                 let name = path.basename(pathF, ext);
                 fs.promises.stat(pathF).then(result => {
                     //example - txt - 128.369kb 
-                    console.log(name + " - " + ext.slice(1) + " - " + result.size/1000 + "kb")
+                    console.log(name + " - " + ext.slice(1) + " - " + result.size/1024 + "kb")
                 })
             }
         })
