@@ -22,9 +22,3 @@ process.on('SIGINT', () => {
 })
 
 
-// let res = ''
-
-// process.on('exit', (code) => {
-//     res += code;
-//     console.log('code');
-// });
